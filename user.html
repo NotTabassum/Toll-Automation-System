@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Electronic Toll</title>
+    <link rel="stylesheet" type="text/css" href="user.css" />
+  </head>
+  <body>
+    <h1>Electronic Toll</h1>
+    <div class="container">
+      <div>
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+          </div>
+          <div class="panel-body">
+            <form action="save_form_data.php" method="post">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <br><br>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="number">Phone Number:</label>
+                <br><br>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                />
+              </div>
+              <div class="form-group">
+                <label for="numberPlate">Vehicle's Plate Number:</label>
+                <br><br>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="numberPlate"
+                  name="numberPlate"
+                />
+              </div>
+              <div class="form-group">
+                <label for="tollPlaza">Select Toll Plaza:</label>
+                <br><br>
+                <select class="form-control" id="tollPlaza" name="tollPlaza">
+                    <option value="plaza1">Padma Multipurpose Bridge Toll</option>
+                    <option value="plaza2">Dhaleshwari Bridge Toll</option>
+                    <option value="plaza3">Meghna Bridge Toll</option>
+                    <option value="plaza4">Gomti/Daudkandi Bridge Toll</option>
+                    <option value="plaza5">Jamuna Multi-purpose Bridge Toll</option>
+                    <option value="plaza6">Mayor Mohammad Hanif Flyover</option>
+                    <option value="plaza7">Dhaka Elevated Expressway</option>
+                </select>
+              </div>
+              <div class="form-group">
+                    <label for="vehicleType">Vehicle's Type:</label>
+                    <br><br>
+                    <select class="form-control" id="vehicleType" name="vehicleType">
+                        <option value="vehicle1">Car</option>
+                        <option value="vehicle2">Bike</option>
+                        <option value="vehicle3">Truck</option>
+                        <option value="vehicle4">Pickup</option>
+                        <option value="vehicle5">Micro Bus</option>
+                        <option value="vehicle6">Mini Bus</option>
+                        <option value="vehicle7">Bus</option>
+                    </select>
+                  </div>
+              </div>
+              <input type="submit" class="btn btn-primary" value="submit"/>
+              <br><br>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" id="close-popup">&times;</span>
+        <h2>Greetings!</h2>
+        <p id="greeting-message"></p>
+    </div>
+</div>
+<script src="user.js"></script>
+</body>
+</html>

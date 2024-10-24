@@ -1,0 +1,243 @@
+/* Reset some default styles */
+body, p, label {
+    margin: 0;
+    margin-top: -90px;
+    padding: 0;
+  }
+
+  h1 {
+    margin-top: -20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #0a0101;
+    margin-bottom: -10px;
+    font-size: 50px;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .container {
+    height: 60%;
+    margin-left: 30%;
+    align-items: center;
+    vertical-align: middle;
+    width: 1000px;
+    margin-top: 30px;
+    text-align: center; /* Center-align the contents of the container */
+  }
+  
+  .panel {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin-bottom: 50%;
+    max-width: 500px; /* Adjust the maximum width as needed */
+  }
+  
+  .panel-heading {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .panel-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* transform: rotate(-3deg); Rotate the form container slightly to the left */
+  }
+  
+  .form-group {
+    margin-left: -90px;
+    margin-bottom: 20px;
+    text-align: left; /* Align form labels to the left */
+  }
+  
+  label {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-size: 18px; */
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select[name="tollPlaza"],
+  select[name="vehicleType"] {
+    width: 130%; /* Make all form elements full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
+  select[name="tollPlaza"],
+  select[name="vehicleType"] {
+    margin-left: 2px;
+    width: 130%; /* Make both select elements full width */
+    max-width: none; /* Remove any max-width set earlier */
+  }
+  
+  select[name="tollPlaza"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent url('arrow.png') no-repeat right center;
+  }
+
+  select[name="vehicleType"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent url('arrow.png') no-repeat right center;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 30%; /* Make the button full width */
+    max-width: 200px; /* Set a maximum width for the button */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .form-control {
+    align-items: center;
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .form-control::placeholder {
+    color: #ccc;
+  }
+  
+
+  /* Customize the styles for select boxes */
+  .form-control select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent url('arrow.png') no-repeat right center;
+    cursor: pointer;
+  }
+  
+  .form-control select:focus {
+    border-color: #007bff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Customize the styles for text areas, if needed */
+  .form-control textarea {
+    resize: vertical; /* Allow vertical resizing of text areas */
+  }
+  
+  /* Increase the font size and padding for form elements */
+.input-group {
+    font-size: 16px;
+  }
+  
+  .form-control {
+    padding: 15px;
+  }
+  
+  select[name="tollPlaza"],
+  select[name="vehicleType"] {
+    padding: 15px;
+  }
+  
+  /* Increase the size of the form container */
+  .panel {
+    max-width: 600px; /* Adjust the maximum width as needed */
+  }
+  
+  /* Increase the padding of the form container */
+  .panel-body {
+    padding: 30px;
+  }
+  
+  /* Increase the margin between the submit button and the bottom line of the box */
+  .btn-primary {
+    padding: 15px 30px; /* Increase padding for the button */
+    margin-top: -10px; /* Increase margin to create more space */
+  }
+
+
+  /* Styles for the pop-up container */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+  
+  /* Add more styles and customization as needed */
+  
